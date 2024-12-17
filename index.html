@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- Enlace para iconos -->
+    
+</head>
+
+<body>
+    <header>
+        <h1>Tienda de Productos Artesanales</h1>
+    </header>
+    <main>
+        <div class="productos">
+            <div class="producto">
+                <img src="https://media.istockphoto.com/id/1309646840/es/foto/envases-artesanales-de-productos-naturales.jpg?s=612x612&w=0&k=20&c=IZYkoM3inU4gJOpBj2cgC4OshxaVGl6NMh5pygdo-00="
+                    alt="producto1">
+                <h2>Canastas</h2>
+                <p>Precio: $100</p>
+                <button onclick="agregarAlCarrito('canastas','100')">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://media.istockphoto.com/id/1309646840/es/foto/envases-artesanales-de-productos-naturales.jpg?s=612x612&w=0&k=20&c=IZYkoM3inU4gJOpBj2cgC4OshxaVGl6NMh5pygdo-00="
+                    alt="producto2">
+                <h2>Sombreros</h2>
+                <p>Precio: $200</p>
+                <button onclick="agregarAlCarrito('Sombreros','200')">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://electroferia.com/wp-content/uploads/2023/10/1-COMPUTADOR-HP-DQ-0500LA-CELERON.jpg"
+                    alt="producto3">
+                <h2>Producto 3</h2>
+                <p>Precio: $500</p>
+                <button onclick="agregarAlCarrito('producto 3','500')">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://todotintasysuministros.com/assets/media/computador-de-escritorio-janus-ax6-monitor-238-ryzen-5-ram-16gb-unidad-solida-512gb.jpg?u=1716657271"
+                    alt="producto4">
+                <h2>Producto 4</h2>
+
+                <div style="display: flex; gap: 30%;">
+                    <div style="align-items: start;">
+                        <p style="font-size: 12px; color: gray;">Precio:</p>
+                        <p style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">$50</p>
+                    </div>
+                    <div>
+                        
+                        <button onclick="agregarAlCarrito('producto 4','50')"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="./carrito.html">Ver Carrito</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
